@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEUS'S GYM</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #FFC300;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+
+select.form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+    appearance: none;
+    background-color: transparent;
+    background-image: url('/bc.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20px;
+}
+
+textarea.form-control {
+    height: 150px;
+    resize: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC300;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #777;
+}
+
+.warning-message {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #FFC300;
+}
+
+/* Estilos do formulário */
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-control {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-bottom: 2px solid #1abc9c;
+}
+
+.warning-message {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 14px;
+    color: #FFC300;
+}
+
+footer {
+    background-color: #4F4F4F;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+<body>
+    <header>
+
+        <style>
+            body{
+                background-image: url("/bc.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+            }
+        </style>
+        <nav>
+            <div class="logo"><a href="index.html">ZEUS'S GYM</a></div>
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="Ins.html">Inscrever</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="title">Formulário de Contato</h1>
+            <form class="form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nome Completo">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nr. Telefone:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Nr. Telefone">
+                </div>
+                <div class="form-group">
+                    <label for="plan-type">Tipo de Plano:</label>
+                    <input type="text" class="form-control" id="plan-type" placeholder="Tipo de Plano">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="plan-type">Género</label>
+                    <input type="text" class="form-control" id="plan-type" placeholder="Género">
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Data de nascimento:</label>
+                    <input type="date" class="form-control" id="birthdate" placeholder="Data de nascimento">
+                </div>
+                <div class="form-group">
+                    <label for="health-issues">Problemas de saúde?</label>
+                    <textarea class="form-control" id="health-issues" placeholder="Problemas de saúde?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+            <p class="warning-message">*Após ter submetido aguarde a resposta da validação da sua inscrição, 
+                caso seja aceite receberá um email ou uma chamada de confirmação
+                e será lhe enviado como será a forma do pagamento*</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 ZEUS'S GYM. Todos os direitos reservados.</p>
+      </footer> 
+    
+      <script>
+        setTimeout(function(){
+          document.getElementById("mensagem").style.display = "block";
+        }, 3000);
+      
+     
+        function fecharMensagem() {
+          document.getElementById("mensagem").style.display = "none";
+        }
+      
+        const cards = document.querySelectorAll(".card");
+  
+  cards.forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      card.style.transform = "scale(1.1)";
+      card.style.transition = "transform 0.2s ease";
+    });
+  
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "scale(1)";
+      card.style.transition = "transform 0.2s ease";
+    });
+  
+  
+  });
+  
+  const menuIcon = document.querySelector('.menu-icon');
+  const menuItems = document.querySelector('nav ul');
+  
+  menuIcon.addEventListener('click', () => {
+    menuItems.classList.toggle('show');
+    menuIcon.classList.toggle('change');
+  });
+  
+  
+  
+  
+      </script>
+    
+    </body>
+    </html>
